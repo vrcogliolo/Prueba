@@ -1,59 +1,64 @@
-# ICodeIn
+# Template
+## Node version manager (nvm)
+Sirve para gestioner multiples versiones de node
+* Windows
+descargar nvm (nvm-setup.exe): https://github.com/coreybutler/nvm-windows/releases
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.6.
-
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
+* Uvuntu
+```console
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+source ~/.bashrc
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Instalar node
+Version node (18.13.0 o superior) (20.11.1 recomendada)
 
-## Code scaffolding
+```console
+nvm install 20.11.1
+```
+### Cambiar de version
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```console
+nvm use 18.14.0
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
+### Ver versiones instaladas
+```
+nvm list
 ```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
+## Instalar yarn
+```console
+npm install -g yarn
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
+## Instalar angular
+```console
+npm install -l @angular/cli
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
+## Instalar dependencias
+```console
+yarn install
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## levantar el proyecto
+```console
+yarn start
+```
 
-## Additional Resources
+### Agregar dependencia
+ejemplo:
+```console
+yarn add <dependensia>
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Agregar una pagina
+```console
+ng g c pages/<nombre de la pagina>
+```
+
+## Agregar un servicio
+```console
+ng g s services/<nombre del servicio>
+`
